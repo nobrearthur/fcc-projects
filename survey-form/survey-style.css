@@ -1,0 +1,76 @@
+
+.top {
+    text-align: center;
+    font-family: monospace, times new roman;
+    color: white;
+  }
+  
+  body {
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    background-image: url(https://images5.alphacoders.com/942/942228.jpg);
+   
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      width: 100%;
+      height: auto;
+    }
+    #survey-form {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  #survey-form {
+    background: rgba(10, 3, 114, 0.68);
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: monospace, times new roman;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 640px;
+    color: white;
+  }
+  
+  .box {
+    text-align: center;
+  }
+  
+  #submit {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #4df7a5;
+    padding: 10px;
+    font-family: monospace, times new roman;
+    font-size: 1.2rem;
+  }
+  
+  #name {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  #email {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  #number {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  #gender {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  #text-area {
+    width: 100%;
+    min-height: 60px;
+    padding: 0.625rem 0.625rem 0 0;
+    resize: vertical;
+  }
