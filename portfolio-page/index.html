@@ -5,62 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+
     <title>Personal Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <nav id="navbar" class="nav-bar">
-            <ul>
-                <li>
-                    <a href="#welcome-section">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="welcome-section">
-        <h1>Hey I am Arthur</h1>
-        <h3>a future developer</h3>
+    <nav id="navbar" class="nav-bar">
+        <ul>
+            <li>
+                <a href="#welcome-section">About</a>
+            </li>
+            <li>
+                <a href="#projects">Work</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="welcome-section" class="welcome">
+        <div class="org">
+            <h1>Hey I am Arthur</h1>
+            <h3>a future developer</h3>
+        </div>
     </section>
 
     <section id=projects>
-        <p>There are some of my projects</p>
-
-        <div class="project-title">
-            <div class="box-pic">
+        <div class="project-desc">
+            <p>These are some of my projects</p>
+        </div>
+        <div class="container">
+            <div class="box">
+                <p>Clarice Lispector's Tribute Page</p>
+                <a href="https://codepen.io/nobrearthur/full/GRjyLNy" target="_blank"><img class="pic-project"
+                        src="https://i.ibb.co/mGCsRHk/site1.png"></a>
             </div>
-            <p>Clarice Lispector's Tribute Page</p>
-        </div>
+            <div class="box">
+                <p>Narrative Games Survey Form</p>
+                <a href="https://codepen.io/nobrearthur/full/ZEpoYem" target="_blank"><img class="pic-project"
+                        src="https://i.ibb.co/gZzCGLd/site2.png"></a>
+            </div>
+            <div class="box">
+                <p>JS Documentation Page</p>
+                <a href="https://codepen.io/nobrearthur/full/ExgOprV" target="_blank"><img class="pic-project"
+                        src="https://i.ibb.co/NYgsY3g/site3.png"></a>
+            </div>
+            <div class="box">
+                <p>Product Landing</p>
+                <a href="https://codepen.io/nobrearthur/full/NWREPqm" target="_blank"><img class="pic-project"
+                        src="https://i.ibb.co/Gn4h5xM/site4.png"></a>
+            </div>
 
-        <div class="project-title">
-            <div class="box-pic"></div>
-            <p>Narrative Games Survey Form</p>
         </div>
-
-        <div class="project-title">
-            <div class="box-pic"></div>
-            <p>JS Documentation Page</p>
-        </div>
-
-        <div class="project-title">
-            <div class="box-pic"></div>
-            <p>Product Landing </p>
-        </div>
-
     </section>
 
-    <section id=contact>
-        <p>Let's work together!!!</p>
-        <a href="http://" id="profile-link">Github</a>
-        <a href="http://" id="profile-link">Linkedin</a>
-        <a href="http://" id="profile-link">Email</a>
+    <section id="contact">
+        <div class="contact">
+            <p>Let's work together!!!</p>
+            <div class="contact-links">
+                <a href="https://github.com/nobrearthur" id="profile-link" target="_blank">
+                    <img src="https://i.ibb.co/9NCWtt6/giticon.png" alt="github" class="icon">
+                    <p>Github</p>
+                </a>
+                <a href="https://www.linkedin.com/in/arthur-nobre-15387b168/" id="profile-link" target="_blank">
+                    <img src="https://i.ibb.co/crpXzD5/linkedinicon.png" alt="linkedinicon" class="icon">
+                    <p>Linkedin</p>
+                </a>
+                <a href="mailto: example@example.com" id="profile-link" target="_blank">
+                    <img src=https://i.ibb.co/M9scFnB/mailicon.png alt="mailicon" class="icon">
+                    <p>Email</p>
+                </a>
+            </div>
+        </div>
     </section>
 
 </body>

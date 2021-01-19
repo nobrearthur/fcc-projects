@@ -1,113 +1,179 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Rubik', sans-serif;
 }
 
-/* NAVIGATION BAR */
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
 
-header {
+/*NAVIGATION*/
+
+nav {
+    padding: 0.5rem;
     position: fixed;
+    background-color: rgba(71, 176, 241, 0.856);
     width: 100%;
 }
 
 .nav-bar {
-    background-color: rgba(31, 108, 223, 0.705);
     text-align: center;
     display: flex;
-    justify-content: space-around;
-    position: relative;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 600px) {
+    .nav-bar {
+        justify-content:flex-end;
+    }
+
+    .nav-bar > ul > li {
+        margin-right: 3vh;
+    }
 }
 
 li {
     display: inline-flex;
-    padding: 1.2rem;
+    padding: 2vh;
 }
 
 ul > li > a {
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 4vh;
     color: white;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.2vh;
+}
+
+ul > li > a:hover {
+    transform: scale(1.2);
 }
 
 /*ABOUT*/
 
-#welcome-section {
+.welcome {
     height: 100vh;
-    background-color: rgba(118, 181, 218, 0.836);
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,41,1) 64%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
+
 h1 {
-    font-size: 4rem;
     text-align: center;
-    margin: 1rem;
+    font-size: 10vh;
+    letter-spacing: 0.6vh;
+    color: white;
 }
 
 h3 {
-    font-size: 1.9rem;
+    text-align: center;
+    font-size: 5vh;
+    color: rgb(141, 132, 132);
 }
 
-/*WORK*/
+/*PROJECTS*/
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    
+}
+
+.box {
+    background-color: cornsilk;
+    width: 340px;
+    height: 170px;
+    margin: 2.5rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+.box > p {
+    text-align: center;
+    background-color: rgb(59, 58, 58);
+    color: white;
+    padding: 1vh;
+}
+
+.pic-project {
+    width: 100%;
+    height:180px;
+    box-sizing: border-box;
+}
+
+.box:hover {
+    transform: scale(1.2);
+}
 
 #projects {
-    background-color: rgb(228, 119, 119);
-    display: grid;
+    background-color: rgba(37, 109, 241, 0.89);
+    padding-bottom: 10vh;
 }
 
-#projects > p {
-    font-size: 2.2rem;
+.project-desc {
     text-align: center;
-    padding: 2rem;
+    padding: 10vh;
+    font-size: 5vh;
 }
 
-.project-title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-}
+.project-desc > p {
+    color: white; 
 
-.box-pic {
-    background-color: seashell;
-    width: 20rem;
-    height: 15rem;
-    border-radius: 0.5rem;
-}
-
-.project-title > p {
-    width: 16rem;
-    font-size: 1.2rem;
-    color:snow;
-    background-color: rgb(68, 68, 65);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    margin-top: -0.5rem;
 }
 
 /*CONTACT*/
 
-#contact {
-    background-color: rgba(3, 30, 110, 0.747);
-    display: grid;
+.contact {
+    height: auto;
+    width: 100%;
     text-align: center;
+    background-color: rgb(23, 15, 56);
+    padding-top: 10vh;
+    
 }
 
-#contact > p {
-    font-size: 2rem;
+.contact > p {
+    font-size: 7vh;
     color:white;
-    margin: 1.5rem;
+    margin: 1.5vh;
     
+}
+
+.contact-links {
+    margin-top: 2vh;
+    display: grid;
+}
+
+@media screen and (min-width: 600px) {
+    .contact-links {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 #profile-link {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
-    margin: 0.8rem;
+    font-size: 5vh;
+    margin: 3.8vh;
+}
+
+
+.icon {
+    max-width: 100%;
+}
+
+.icon:hover {
+    transform: scale(1.2);
 }
